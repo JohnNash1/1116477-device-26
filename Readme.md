@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [John Nash](https://up.htmlacademy.ru/htmlcss/26/user/1116477).
-* Наставник: `Неизвестно`.
+* Наставник: [Оксана Сергеева](https://htmlacademy.ru/profile/oksana)
 
 ---
 
