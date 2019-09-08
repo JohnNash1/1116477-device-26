@@ -5,26 +5,35 @@
     <title>Магазин цифровых товаров Device</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс">
-        <ul>
-          <li><input type="search" name="searchdevice" id="searchdevice"></li>
-          <li><button type="button" name="login">Войти</button></li>
-          <li><button type="button" name="compare">Сравнить</button></li>
-          <li><button type="button" name="cart">Корзина</button></li>
-        </ul>
-        <ul>
-          <li><a href="catalog.html">Каталог товаров</a><button type="button" name="catalog"></button></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
+    <header class="main-header">
+      <nav class="header-navigation">
+        <div class="header-block1">
+          <a href="#">
+            <img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс">
+          </a>
+          <form class="search" action="" method="get">
+            <label><input type="search" placeholder="Поиск по сайту" name="searchdevice" id="searchdevice"></label>
+          </form>
+        <a href="catalog.html">Каталог товаров</a><button type="button" name="catalog">Открыть</button>
+        </div>
+        <div class="header-block2">
+          <ul class="user-interactive">
+            <li><a href="#">Войти</a></li>
+            <li><a href="#">Сравнить</a></li>
+            <li><a href="#">Корзина</a></li>
+          </ul>
+          <ul class="info-links">
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <img src="img/line1.svg" alt="">
+        </div>
       </nav>
     </header>
-    <main>
+    <main class="container">
       <h1>DEVICE</h1>
-      <section>
+      <section class="about-us">
         <h2>О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика,
            который есть в каждом из нас.</p>
@@ -32,41 +41,50 @@
           Мы можем доставить ваш товар в самые отдалённые точки России!
           DEVICE работает со многими транспортными компаниями:
         </p>
-        <ul>
+        <ul class="transport">
           <li>Деловые Линии</li>
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
         <a href="info.html">Подробнее о нас</a>
       </section>
-      <section>
+      <section class="contacts">
         <h2>Контакты</h2>
         <img src="img/map.jpg" width="560" height="222" alt="Где мы находимся">
         <button type="button" name="feedback">Напишите нам</button>
       </section>
     </main>
     <footer>
-      <img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс">
-      <p>г. Москва, ул. Строителей, 15</p>
-      <div>
-        <ul>
+      <div class="footer-firstline">
+        <a href="#">
+         <img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс">
+        </a>
+        <ul class="user-interactive">
+          <li><a href="#">Войти</a></li>
+          <li><a href="#">Сравнить</a></li>
+          <li><a href="#">Корзина</a></li>
+        </ul>
+      </div>
+      <div class="footer-secondline">
+       <p>г. Москва, ул. Строителей, 15</p>
+        <ul class="info-links">
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <ul>
-          <li><a href="#">Фейсбук</a></li>
-          <li><a href="#">Инстаграм</a></li>
-          <li><a href="#">Твиттер</a></li>
-        </ul>
+        <p>Тел.: +7 (495) 495-95-95</p>
       </div>
-      <ul>
-        <li><button type="button" name="login">Войти</button></li>
-        <li><button type="button" name="compare">Сравнить</button></li>
-        <li><button type="button" name="cart">Корзина</button></li>
-      </ul>
-      <p>Тел.: +7 (495) 495-95-95</p>
-      <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML Academy">
+       <div class="footer-thirdline">
+        <img src="img/line2.svg" alt="">
+         <ul class="social">
+           <li><a href="#">Фейсбук</a></li>
+           <li><a href="#">Инстаграм</a></li>
+           <li><a href="#">Твиттер</a></li>
+         </ul>
+         <a href="https://htmlacademy.ru">
+           <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML Academy">
+         </a>
+       </div>
     </footer>
   </body>
 </html>
