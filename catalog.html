@@ -60,8 +60,13 @@
       </ul>
     </nav>
     <section class="filter">
-      <form class="filters" action="" method="post">
+      <form class="filters" action="" method="post" oninput="priceoutput.value=price.value">
        <h2>Фильтр</h2>
+       <fieldset class="price-range">
+         <legend>Стоимость</legend>
+         <input type="range" id="price" min="0" max="10000" value="0">
+         <output name="priceoutput">0</output>
+       </fieldset>
         <fieldset class="color-check">
           <legend>Цвет</legend>
           <input type="checkbox" name="Black" id="black" checked>
