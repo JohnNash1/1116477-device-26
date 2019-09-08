@@ -61,7 +61,7 @@
     </nav>
     <section class="filter">
       <form class="filters" action="#" method="post" oninput="priceoutput.value=price.value">
-       <h2>Фильтр</h2>
+       <h2>Фильтр:</h2>
        <fieldset class="price-range">
          <legend>Стоимость</legend>
          <input type="range" id="price" min="0" max="10000" value="0">
@@ -89,7 +89,20 @@
       </form>
     </section>
     <section class="items">
-      <h2>Товары</h2>
+      <h2>Сортировка:</h2>
+      <div class="sorting">
+        <ul class="sorting-categories">
+          <li><button type="button">По цене</button></li>
+          <li><button type="button">По типу</button></li>
+          <li><button type="button">По популярности</button></li>
+        </ul>
+      </div>
+      <div class="sorting-direction">
+        <ul class="direction-options">
+          <li><button type="button">Вверх</button></li>
+          <li><button type="button">Вниз</button></li>
+        </ul>
+      </div>
       <div class="selfies">
        <div>
          <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
@@ -107,6 +120,15 @@
          <img src="img/item-4.jpg" width="360" height="380" alt="селфи-палка «Следуй за мной»">
          <p><a href="">селфи-палка «Следуй за мной»</a> <span>4900 руб.</span></p>
        </div>
+      </div>
+      <div class="pagination">
+        <button type="button" name="previous">Назад</button>
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item-current"><a>1</a></li>
+          <li class="pagination-item"><a href="">2</a></li>
+          <li class="pagination-item"><a href="">3</a></li>
+        </ul>
+        <button type="button" name="next">Вперёд</button>
       </div>
     </section>
     </main>
