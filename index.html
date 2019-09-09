@@ -53,55 +53,75 @@
     </header>
     <main class="container">
       <h1 class="visually-hidden">DEVICE</h1>
-      <section class="popular1">
-        <h2>Делай селфи, как Бен Стиллер!</h2>
-        <span>01</span>
-        <a href=""><img src="img/slider-1.png" width="384" height="486" alt="Популярная селфи-палка"></a>
-        <p>Самая длинная палка для селфи доступна в нашем магазине.
-           Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-        </p>
-        <a href="">Подробнее</a>
-        <div class="length">
-          <p>8,5 м</p>
-          <p>Длина палки</p>
-        </div>
-        <div class="weight">
-          <p>5 кг</p>
-          <p>Вес палки</p>
-        </div>
-        <div class="material">
-          <p>Карбон</p>
-          <p>Материал</p>
-        </div>
-      </section>
-      <section class="popular2">
-        <h2>Худеем правильно!</h2>
-        <span>02</span>
+      <section class="popular">
+        <h2 class="visually-hidden">Популярные товары</h2>
+        <article class="slide-1">
+          <a href=""><img src="img/slider-1.png" width="384" height="486" alt="Популярная селфи-палка"></a>
+          <div class="popular-description">
+            <h3>Делай селфи, как Бен Стиллер!</h3>
+            <p>Самая длинная палка для селфи доступна в нашем магазине.
+               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+            </p>
+            <a href="">Подробнее</a>
+            <ul class="features">
+              <li>
+              <p>8,5 м</p>
+              <p>Длина палки</p>
+              </li>
+              <li>
+              <p>5 кг</p>
+              <p>Вес палки</p>
+              </li>
+              <li>
+              <p>Карбон</p>
+              <p>Материал</p>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+      <article class="slide-2">
         <a href=""><img src="img/slider-2.png" width="345" height="485" alt="Популярный фитнес браслет"></a>
-        <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
+        <div class="popular-description">
+         <h3>Худеем правильно!</h3>
+         <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
            не пропускать занятия и соблюдать диету.</p>
-        <a href="">Подробнее</a>
-        <div class="worktime">
-          <p>48 часов</p>
-          <p>Без подзарядки</p>
+         <a href="">Подробнее</a>
+         <ul class="features">
+           <li>
+           <p>48 часов</p>
+           <p>Без подзарядки</p>
+           </li>
+         </ul>
         </div>
-      </section>
-      <section class="popular3">
-        <h2>Порхает как бабочка, жалит как пчела!</h2>
-        <span>03</span>
+      </article>
+
+      <article class="slide-3">
         <a href=""><img src="img/slider-3.png" width="526" height="334" alt="Популярный квадрокоптер"></a>
-        <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
+        <div class="popular-description">
+         <h3>Порхает как бабочка, жалит как пчела!</h3>
+         <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
            мощным лазером, замаскированным под стандартную камеру.</p>
-        <a href="">Подробнее</a>
-        <div class="flightrange">
-          <p>800 м</p>
-          <p>Дальность полета</p>
+         <a href="">Подробнее</a>
+         <ul class="features">
+           <li>
+           <p>800 м</p>
+           <p>Дальность полета</p>
+           </li>
+           <li>
+           <p>50 м</p>
+           <p>Радиус поражения</p>
+           </li>
+          </ul>
         </div>
-        <div class="radius">
-          <p>50 м</p>
-          <p>Радиус поражения</p>
-        </div>
+      </article>
+      <ul class="slider-pagination">
+        <li><button type="button" name="slide-1">слайд1</button></li>
+        <li><button type="button" name="slide-2">слайд2</button></li>
+        <li><button type="button" name="slide-3">слайд3</button></li>
+      </ul>
       </section>
+
       <section class="category-item-list">
         <h2 class="visually-hidden">Список категорий товаров</h2>
         <ul>
@@ -115,37 +135,40 @@
       </section>
       <section class="services">
         <h2 class="visually-hidden">Сервис</h2>
-        <ul class="services-list">
-          <li><a href="">Доставка</a></li>
-          <li><a href="">Гарантия</a></li>
-          <li><a href="">Кредит</a></li>
-        </ul>
-      </section>
-      <section class="delivery">
-        <h2>Доставка</h2>
+        <div class="services-list-block">
+          <ul class="services-list">
+            <li><button type="button" name="delivery">Доставка</button></li>
+            <li><button type="button" name="warranty">Гарантия</button></li>
+            <li><button type="button" name="credit">Кредит</button></li>
+          </ul>
+        </div>
+      <div class="service-description">
+        <h3>Доставка</h3>
         <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду
           совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
           на ваш этаж.</p>
-      </section>
-      <section class="warranty">
-        <h2>Гарантия</h2>
+      </div>
+      <div class="service-description">
+        <h3>Гарантия</h3>
         <p>Если из-за возгорания купленного у нас товара у вас сгорит
           дом — не переживайте, мы выдадим вам новый.
           Товар, не дом, конечно же.</p>
-      </section>
-      <section class="credit">
-        <h2>Кредит</h2>
+      </div>
+      <div class="service-description">
+        <h3>Кредит</h3>
         <p>Залезть в долговую яму стало проще! Кредитные консультанты
           подберут для вас наиболее выгодные условия кредита.
           Выгодные для нашего банка, разумеется.</p>
+      </div>
       </section>
+
       <section class="partners">
         <h2 class="visually-hidden">Партнёры</h2>
         <ul class="partners-list">
-          <li><a href=""><img src="img/partner-1.jpg" alt="Партнёр1"></a></li>
-          <li><a href=""><img src="img/partner-2.jpg" alt="Партнёр2"></a></li>
-          <li><a href=""><img src="img/partner-3.jpg" alt="Партнёр3"></a></li>
-          <li><a href=""><img src="img/partner-4.jpg" alt="Партнёр4"></a></li>
+          <li><a href=""><span class="visually-hidden">dji</span></a></li>
+          <li><a href=""><span class="visually-hidden">SP-Gadgets</span></a></li>
+          <li><a href=""><span class="visually-hidden">Gopro</span></a></li>
+          <li><a href=""><span class="visually-hidden">Vive</span></a></li>
         </ul>
       </section>
 
@@ -199,7 +222,7 @@
            <li><a href="">Инстаграм</a></li>
            <li><a href="">Твиттер</a></li>
          </ul>
-         <a href="https://htmlacademy.ru">
+         <a href="https://htmlacademy.ru/intensive/htmlcss">
            <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML Academy">
          </a>
        </div>
