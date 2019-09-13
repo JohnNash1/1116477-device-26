@@ -12,9 +12,9 @@
             <img src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина Девайс">
           </a>
           <form class="search" action="#" method="get">
-            <label><input type="search" placeholder="Поиск по сайту" name="searchdevice" id="searchdevice"></label>
+            <label><input type="search" placeholder="Поиск по сайту" name="searchdevice" id="searchdevice" aria-label="Поиск по сайту"></label>
           </form>
-        <a href="catalog.html">Каталог товаров</a><button type="button" name="catalog">Открыть</button>
+        <a href="catalog.html">Каталог товаров</a><button type="button" name="catalog" aria-label="Открыть каталог"><img src="img/plus.svg" alt="Открыть каталог"></button>
         </div>
         <div class="catalog-item-categories">
           <div class="item-categories1">
@@ -196,8 +196,8 @@
           <h2>Контакты</h2>
           <img src="img/map.png" width="560" height="222" alt="Где мы находимся">
           <p><button type="button" name="feedback">Напишите нам</button></p>
-          <img src="img/map-big.png" width="992" height="591" alt="Большая карта">
-          <button type="button" name="close">Закрыть</button>
+          <img src="img/map-big.png" width="992" height="591" alt="г. Москва, ул. Строителей, 15">
+          <button type="button" name="close" aria-label="Закрыть"><img src="img/modal-close.svg" alt="закрыть"></button>
         </section>
       </div>
 
@@ -232,7 +232,18 @@
            <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML Academy">
          </a>
        </div>
-       <!--Хочу галочку в доп задание))-->
     </footer>
+    <section class="feedback">
+      <form class="feedback-form" action="index.html" method="post">
+        <label for="username">Ваше имя:</label>
+        <input type="text" name="username" id="username" placeholder="Имя Фамилия">
+        <label for="user-email">Ваш e-mail:</label>
+        <input type="email" name="user-email" id="user-email" placeholder="email@example.com"><br>
+        <label for="feedback-text">Текст письма:</label>
+        <textarea name="feedback-text" id="feedback-text" rows="8" cols="80">В свободной форме</textarea><br>
+        <button type="submit">Отправить</button>
+      </form>
+      <button type="button" name="close" aria-label="Закрыть"><img src="img/modal-close.svg" alt="закрыть"></button>
+    </section>
   </body>
 </html>
