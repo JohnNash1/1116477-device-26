@@ -61,12 +61,13 @@
     </nav>
     <div class="items-box">
       <section class="filter">
-        <form class="filters" action="#" method="post" oninput="priceoutput.value=price.value">
+        <form class="filters" action="#" method="post">
          <h2>Фильтр:</h2>
          <fieldset class="price-range">
            <legend>Стоимость</legend>
-           <input type="range" id="price" min="0" max="10000" value="0">
-           <output name="priceoutput">0</output>
+           <div class="range-part" tabindex="0">
+             <div class="range-slider"></div><div class="range-full"></div><div class="range-slider">
+           </div>
          </fieldset>
           <fieldset class="color-check">
             <legend>Цвет</legend>
@@ -155,7 +156,7 @@
         </ul>
         <p>Тел.: +7 (495) 495-95-95</p>
       </div>
-       <div class="footer-thirdline">        
+       <div class="footer-thirdline">
          <ul class="social">
            <li><a href="">Фейсбук</a></li>
            <li><a href="">Инстаграм</a></li>
