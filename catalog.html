@@ -67,13 +67,13 @@
         <form class="filters" action="#" method="post">
          <h2>Фильтр:</h2>
          <fieldset class="price-range">
-           <legend>Стоимость</legend>
+           <legend class="filter-title">Стоимость</legend>
            <div class="range-part" tabindex="0">
              <div class="range-slider"></div><div class="range-full"></div><div class="range-slider"></div>
            </div>
          </fieldset>
           <fieldset class="color-check">
-            <legend>Цвет</legend>
+            <legend class="filter-title">Цвет</legend>
             <input type="checkbox" name="Black" id="black" checked>
             <label for="black">Чёрный</label>
             <input type="checkbox" name="white" id="white">
@@ -86,7 +86,7 @@
             <label for="Pink">Розовый</label>
           </fieldset>
           <fieldset class="bt-check">
-            <legend>Bluetooth</legend>
+            <legend class="filter-title">Bluetooth</legend>
               <label><input type="radio" name="Bt" value="yes" checked>Есть</label>
               <label><input type="radio" name="Bt" value="no">Нет</label>
               <p><button type="submit">Показать</button></p>
@@ -111,19 +111,19 @@
         <div class="selfies">
          <div>
            <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-         <p><a href="">Любительская селфи-палка</a><span>1500 руб.</span></p>
+         <p><a href="" class="item-card-anchor">Любительская селфи-палка</a><span>1500 руб.</span></p>
          </div>
          <div>
            <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-           <p><a href="">Профессиональная селфи-палка</a> <span>1500 руб.</span></p>
+           <p><a href="" class="item-card-anchor">Профессиональная селфи-палка</a> <span>1500 руб.</span></p>
          </div>
          <div>
            <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-           <p><a href="">Непотопляемая селфи-палка</a> <span>2500 руб.</span></p>
+           <p><a href="" class="item-card-anchor">Непотопляемая селфи-палка</a> <span>2500 руб.</span></p>
          </div>
          <div>
            <img src="img/item-4.jpg" width="360" height="380" alt="селфи-палка «Следуй за мной»">
-           <p><a href="">селфи-палка «Следуй за мной»</a> <span>4900 руб.</span></p>
+           <p><a href="" class="item-card-anchor">селфи-палка «Следуй за мной»</a> <span>4900 руб.</span></p>
          </div>
         </div>
         <div class="pagination">
@@ -139,12 +139,12 @@
     </div>
 
     </main>
-    <footer>
+    <footer class="main-footer">
       <div class="footer-firstline">
         <a href="">
          <img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс">
         </a>
-        <ul class="user-interactive">
+        <ul class="footer-user-interactive">
           <li><a href="">Войти</a></li>
           <li><a href="">Сравнить</a></li>
           <li><a href="">Корзина</a></li>
@@ -152,7 +152,7 @@
       </div>
       <div class="footer-secondline">
        <p>г. Москва, ул. Строителей, 15</p>
-        <ul class="info-links">
+        <ul class="footer-info-links">
           <li><a href="">Доставка</a></li>
           <li><a href="">Гарантия</a></li>
           <li><a href="">Контакты</a></li>
