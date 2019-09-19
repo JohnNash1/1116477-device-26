@@ -420,6 +420,9 @@ body {
 .logo-anchor:active {
   opacity: 0.3;
 }
+.search {
+  display: flex;
+}
 .search-field {
   border: none;
   background-color: transparent;
@@ -441,8 +444,22 @@ body {
   outline: 0;
 }
 .search-button {
-  display: none;
+  visibility: hidden;
+  border: none;
+  background-color: transparent;
 }
 .search-field:focus + .search-button {
-  dispaly: block;
+  visibility: visible;
+  border: 2px solid #000000;
+  background-color: transparent;
+  padding: 19px 21px;
+  transition: 0.5s;
+}
+.search-field:focus + .search-button:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+.search-field:focus + .search-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #000000;
 }
