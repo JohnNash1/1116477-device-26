@@ -10,13 +10,15 @@
     <header class="main-header">
       <nav class="header-navigation">
         <div class="header-block1">
-          <a href="">
+          <a href="" class="logo-anchor">
             <img src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина Девайс">
           </a>
           <form class="search" action="#" method="get">
-            <label><input type="search" placeholder="Поиск по сайту" name="searchdevice" id="searchdevice" aria-label="Поиск по сайту"></label>
+            <label for="searchdevice"></label>
+            <input type="search" placeholder="Поиск по сайту" name="searchdevice" id="searchdevice" aria-label="Поиск по сайту" class="search-field">
+            <button type="submit" class="search-button">Найти</button>
           </form>
-        <a href="catalog.html" class="anchor info-links">Каталог товаров</a><button type="button" name="catalog" aria-label="Открыть каталог" class="search-button"></button>
+        <a href="catalog.html" class="anchor info-links">Каталог товаров</a><button type="button" name="catalog" aria-label="Открыть каталог" class="catalog-button"></button>
         </div>
         <div class="catalog-item-categories">
           <div class="item-categorie">
