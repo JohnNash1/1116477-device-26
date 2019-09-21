@@ -18,8 +18,23 @@
             <input type="search" placeholder="Поиск по сайту" name="searchdevice" id="searchdevice" aria-label="Поиск по сайту" class="search-field">
             <button type="submit" class="search-button">Найти</button>
           </form>
-        <a href="catalog.html" class="anchor info-links">Каталог товаров</a><button type="button" name="catalog" aria-label="Открыть каталог" class="catalog-button"></button>
+          <div class="catalog-container">
+          <a href="catalog.html" class="anchor info-links">Каталог товаров</a><button type="button" name="catalog" aria-label="Открыть каталог" class="catalog-button"></button>
+          </div>
         </div>
+        <div class="header-block2">
+          <ul class="lists user-interactive">
+            <li class="interactive-login"><a href="" class="anchor login-anchor">Войти</a></li>
+            <li class="interactive-compare"><a href="" class="anchor compare-anchor" compare-anchor>Сравнить</a></li>
+            <li class="interactive-cart"><a href="" class="anchor cart-anchor">Корзина</a></li>
+          </ul>
+          <ul class="lists services-links">
+            <li class="service-delivery"><a class="anchor info-links" href="">Доставка</a></li>
+            <li><a class="anchor info-links" href="">Гарантия</a></li>
+            <li class="service-contacts"><a class="anchor info-links" href="">Контакты</a></li>
+          </ul>
+        </div>
+        </nav>
         <div class="catalog-item-categories">
           <div class="item-categorie">
             <ul class="lists">
@@ -39,18 +54,6 @@
               <li><a href="" class="anchor">Квадрокоптеры</a></li>
             </ul>
           </div>
-        </div>
-        <div class="header-block2">
-          <ul class="lists user-interactive">
-            <li><a href="" class="anchor login-anchor">Войти</a></li>
-            <li><a href="" class="anchor compare-anchor" compare-anchor>Сравнить</a></li>
-            <li><a href="" class="anchor cart-anchor">Корзина</a></li>
-          </ul>
-          <ul class="lists info-links">
-            <li><a href="" class="anchor">Доставка</a></li>
-            <li><a href="" class="anchor">Гарантия</a></li>
-            <li><a href="" class="anchor">Контакты</a></li>
-          </ul>
         </div>
       </nav>
     </header>
@@ -164,13 +167,13 @@
           совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
           на ваш этаж.</p>
       </div>
-      <div class="service-description">
+      <div class="service-description visually-hidden">
         <h3>Гарантия</h3>
         <p>Если из-за возгорания купленного у нас товара у вас сгорит
           дом — не переживайте, мы выдадим вам новый.
           Товар, не дом, конечно же.</p>
       </div>
-      <div class="service-description">
+      <div class="service-description visually-hidden">
         <h3>Кредит</h3>
         <p>Залезть в долговую яму стало проще! Кредитные консультанты
           подберут для вас наиболее выгодные условия кредита.
@@ -220,42 +223,53 @@
         </a>
         <ul class="lists footer-user-interactive">
           <li><a href="" class="anchor footer-login-anchor">Войти</a></li>
-          <li><a href="" class="anchor footer-compare-anchor">Сравнить</a></li>
+          <li class="footer-compare"><a href="" class="anchor footer-compare-anchor">Сравнить</a></li>
           <li><a href="" class="anchor footer-cart-anchor">Корзина</a></li>
         </ul>
       </div>
+
       <div class="footer-secondline">
        <p>г. Москва, ул. Строителей, 15</p>
         <ul class="lists footer-info-links">
           <li><a href="" class="anchor">Доставка</a></li>
-          <li><a href="" class="anchor">Гарантия</a></li>
+          <li class="footer-warranty"><a href="" class="anchor">Гарантия</a></li>
           <li><a href="" class="anchor">Контакты</a></li>
         </ul>
         <p>Тел.: +7 (495) 495-95-95</p>
       </div>
-       <div class="footer-thirdline">
-         <ul class="lists social">
-           <li><a href="" aria-label="Магазин Девайс на Фейсбуке" class="fb"></a></li>
-           <li><a href="" aria-label="Магазин Девайс в Инстаграме" class="instagram"></a></li>
-           <li><a href="" aria-label="Магазин Девайс в Твиттере" class="twitter"></a></li>
-         </ul>
-         <a href="https://htmlacademy.ru/intensive/htmlcss">
-           <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML Academy">
-         </a>
-       </div>
+
+      <div class="footer-thirdline">
+        <ul class="lists social">
+          <li><a href="" aria-label="Магазин Девайс на Фейсбуке" class="fb"></a></li>
+          <li><a href="" aria-label="Магазин Девайс в Инстаграме" class="instagram"></a></li>
+          <li><a href="" aria-label="Магазин Девайс в Твиттере" class="twitter"></a></li>
+        </ul>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML Academy">
+        </a>
+      </div>
     </footer>
+
     <section class="feedback">
       <h2 class="visually-hidden">Обратная связь</h2>
       <form class="feedback-form" action="index.html" method="post">
-        <label for="username">Ваше имя:</label>
-        <input type="text" name="username" id="username" placeholder="Имя Фамилия" required>
-        <label for="user-email">Ваш e-mail:</label>
-        <input type="email" name="user-email" id="user-email" placeholder="email@example.com" required><br>
-        <label for="feedback-text">Текст письма:</label>
-        <textarea name="feedback-text" id="feedback-text" rows="8" cols="80" placeholder="В свободной форме" required></textarea><br>
-        <button type="submit">Отправить</button>
+        <div class="person-mainbox">
+         <div class="person-box">
+           <label for="username" class="modal-text">Ваше имя:</label><br>
+           <input class="person" type="text" name="username" id="username" placeholder="Имя Фамилия" required>
+         </div>
+         <div class="person-box email-box">
+           <label for="user-email" class="modal-text">Ваш e-mail:</label><br>
+           <input class="person" type="email" name="user-email" id="user-email" placeholder="email@example.com" required><br>
+         </div>
+        </div>
+        <div class="modal-text-box">
+          <label for="feedback-text" class="modal-text">Текст письма:</label><br>
+          <textarea class="feedback-text-input" name="feedback-text" id="feedback-text" rows="8" cols="80" placeholder="В свободной форме" required></textarea><br>
+          <button type="submit" class="services-button modal-submit">Отправить</button>
+        </div>
       </form>
-      <button type="button" name="close" aria-label="Закрыть"></button>
+      <button type="button" name="close" aria-label="Закрыть" class="modal-close-button"></button>
     </section>
     <div class="modal-close">
       <section class="modal-map">
