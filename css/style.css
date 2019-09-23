@@ -21,7 +21,7 @@
 body {
   margin: 0;
   padding: 0;
-  width: 1440px;
+  /* width: 1440px; */
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 300;
@@ -59,13 +59,28 @@ body {
   padding: 0;
 }
 .main-header {
-  margin: 40px 140px;
-  background-color: rgb(240, 197, 46, 0.5);
+  position: relative;
+  margin: 40px auto;
   width: 1160px;
+}
+.main-header::after {
+  content: "";
+  position:absolute;
+  top: 19px;
+  width: 1160px;
+  height: 299px;
+  background-color: rgb(240, 197, 46, 0.5);
+  z-index: -1;
+}
+.inner-header::after {
+  height: 186px;
 }
 .main-footer {
   background-color: #464646;
   min-height: 323px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .main-footer p {
   font-family: "Gilroy", "Arial", sans-serif;
@@ -206,35 +221,35 @@ body {
 }
 .partners-list {
   display: flex;
+  flex-wrap: wrap;
 }
 .partners-list a {
   display: block;
   width: 160px;
   padding: 50px;
 }
-.partner1 {
-  background-image: url("../img/partner-1.jpg");
+.partner {
   background-repeat: no-repeat;
   background-position: center;
-  margin-left: 140px;
+  opacity: 0.2;
 }
-.partner2 {
-  background-image: url("../img/partner-2.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
+.partner:nth-child(2) {
   margin: 0 40px;
 }
-.partner3 {
-  background-image: url("../img/partner-3.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
+.partner:nth-child(3) {
   margin-right: 40px;
 }
-.partner4 {
+.dji {
+  background-image: url("../img/partner-1.jpg");
+}
+.sp-gadgets {
+  background-image: url("../img/partner-2.jpg");
+}
+.gopro {
+  background-image: url("../img/partner-3.jpg");
+}
+.vive {
   background-image: url("../img/partner-4.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 100px;
 }
 .button {
   border: none;
@@ -542,8 +557,24 @@ body {
 .catalog-item-categories {
   display: none;
 }
+.slides {
+  width: 100%;
+  max-width: 988px;
+  margin: 0 auto;
+}
 .slide {
   display: flex;
+  margin: 0 auto;
+}
+.category-item-list {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.partners {
+  width: 100%;
+  max-width: 1157px;
+  margin: 0 auto;
 }
 .features {
   display: flex;
@@ -551,17 +582,36 @@ body {
 .services {
   display: flex;
   align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .information {
   display: flex;
+  width: 100%;
+  max-width: 1161px;
+  margin: 0 auto;
 }
 .about-us {
-  width: 50%;
-  margin-left: 139px;
+  width: 462px;
+}
+.about-us::before {
+  display: block;
+  content: "";
+  width: 80px;
+  height: 7px;
+  background-color: #000000;
 }
 .contacts {
-  width: 50%;
-  margin-right: 140px;
+  width: 560px;
+  margin-left: 139px;
+}
+.contacts::before {
+  display: block;
+  content: "";
+  width: 80px;
+  height: 7px;
+  background-color: #000000;
 }
 .footer-firstline {
   padding-top: 45px;
@@ -592,11 +642,19 @@ body {
   margin: 0 38px;
 }
 .footer-thirdline {
-  margin-right: 140px;
+  padding-left: 139px;
+  padding-right: 140px;
   margin-top: 40px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+.footer-thirdline::before {
+  content: "";
+  width: 80px;
+  height: 7px;
+  background-color: #ffc600;
+  margin-right: auto;
 }
 .pages-links {
   display: flex;
@@ -610,6 +668,9 @@ body {
 }
 .items-box {
   display: flex;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .filter {
   background-color: #ebebeb;
@@ -687,8 +748,9 @@ body {
   opacity: 0.2;
 }
 .catalog-navigation {
-  margin-left: 201px;
-  margin-bottom: 48px;
+  margin: 0 auto;
+  width: 1100px;
+  padding-left: 60px;
 }
 .color-check {
   display: flex;
@@ -701,23 +763,17 @@ body {
 .selfies {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 69px;
+  padding-left: 73px;
 }
-.first-selfie {
-  margin-top: 69px;
-  margin-left: 73px;
+.catalog-item {
+  outline: 1px solid red;
+  margin-bottom: 49px;
 }
-.second-selfie {
-  margin-top: 69px;
-  margin-left: 40px;
+.catalog-item:nth-child(odd) {
+  margin-right: 39px;
 }
-.third-selfie {
-  margin-top: 73px;
-  margin-left: 73px;
-}
-.fourth-selfie {
-  margin-top: 73px;
-  margin-left: 40px;
-}
+
 .pagination-list {
   margin-left: 73px;
   display: flex;
