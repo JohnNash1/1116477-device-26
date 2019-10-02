@@ -397,6 +397,7 @@ body {
   padding-left: 5px;
 }
 .catalog-button {
+  position: relative;
   margin-left: 12px;
   border: none;
   display: inline-block;
@@ -405,6 +406,9 @@ body {
   background-color: transparent;
   background-image: url(../img/plus.svg);
   opacity: 0.3;
+}
+.catalog-container:hover .catalog-item-categories {
+  display: flex;
 }
 .sort {
   font-family: "Open Sans", "Arial", sans-serif;
@@ -608,15 +612,19 @@ body {
   margin-left: 34px;
 }
 .service-contacts {
-  margin-left: auto;  
+  margin-left: auto;
 }
 .catalog-item-categories {
   position: absolute;
+  top: 100%;
+  left: 0;
   display: none;
   align-items: flex-start;
   min-height: 129px;
   background-color: #f7e296;
   width: 100%;
+  z-index: 10;
+  outline: 1px solid red;
 }
 .categorie-list {
   margin: 0;
@@ -667,7 +675,7 @@ body {
 .popular-description {
   position: relative;
   margin-left: 125px;
-  z-index: -1;
+  /* z-index: -1; */
   width: 100%;
   min-width: 490px;
 }
@@ -1001,6 +1009,8 @@ body {
 }
 .catalog-container {
   margin-top: 85px;
+  outline: 1px solid red;
+  padding-bottom: 25px;
 }
 .feedback {
   padding: 0;
