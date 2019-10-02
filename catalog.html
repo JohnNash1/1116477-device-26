@@ -10,7 +10,7 @@
     <header class="main-header inner-header">
       <nav class="header-navigation">
         <div class="header-block1">
-          <a href="index.html">
+          <a class="logo-anchor" href="index.html">
             <img src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина Девайс">
           </a>
           <form class="search" action="#" method="get">
@@ -30,7 +30,7 @@
           </ul>
           <ul class="lists services-links">
             <li class="service-delivery"><a class="anchor info-links" href="">Доставка</a></li>
-            <li><a class="anchor info-links" href="">Гарантия</a></li>
+            <li class="service-warranty"><a class="anchor info-links" href="">Гарантия</a></li>
             <li class="service-contacts"><a class="anchor info-links" href="">Контакты</a></li>
           </ul>
         </div>
@@ -68,8 +68,8 @@
     </nav>
     <div class="items-box">
       <section class="filter">
-        <form class="filters" action="#" method="post">
          <h2 class="section-title">Фильтр:</h2>
+         <form class="filters" action="#" method="post">
           <fieldset class="price-range">
            <legend class="filter-title">Стоимость</legend>
            <div class="range-full" tabindex="0">
@@ -78,21 +78,23 @@
           </fieldset>
           <fieldset class="color-check">
             <legend class="filter-title">Цвет</legend>
-            <input class="visually-hidden" type="checkbox" name="Black" id="black" checked>
-            <label for="black">Чёрный</label>
-            <input class="visually-hidden" type="checkbox" name="white" id="white">
+            <input class="visually-hidden color-checkbox" type="checkbox" name="Black" id="black" checked>
+            <label for="black" tabindex="0">Чёрный</label>
+            <input class="visually-hidden color-checkbox" type="checkbox" name="white" id="white">
             <label for="white">Белый</label>
-            <input class="visually-hidden" type="checkbox" name="Blue" id="Blue" checked>
+            <input class="visually-hidden color-checkbox" type="checkbox" name="Blue" id="Blue" checked>
             <label for="Blue">Синий</label>
-            <input class="visually-hidden" type="checkbox" name="Red" id="Red" checked>
+            <input class="visually-hidden color-checkbox" type="checkbox" name="Red" id="Red" checked>
             <label for="Red">Красный</label>
-            <input class="visually-hidden" type="checkbox" name="Pink" id="Pink">
+            <input class="visually-hidden color-checkbox" type="checkbox" name="Pink" id="Pink">
             <label for="Pink">Розовый</label>
           </fieldset>
           <fieldset class="bt-check">
             <legend class="filter-title">Bluetooth</legend>
-              <label><input class="visually-hidden" type="radio" name="Bt" value="yes" checked>Есть</label>
-              <label><input class="visually-hidden" type="radio" name="Bt" value="no">Нет</label>
+              <input class="visually-hidden radio" type="radio" id="bt-yes" name="Bt" value="yes" checked>
+              <label for="bt-yes">Есть</label>
+              <input class="visually-hidden radio" type="radio" id="bt-no" name="Bt" value="no">
+              <label for="bt-no">Нет</label>
           </fieldset>
           <p><button type="submit" class="services-button filter-button"><span>Показать</span></button></p>
         </form>
@@ -102,9 +104,9 @@
         <form class="sorting-form" action="#" method="post">
           <h2 class="sorting-form-title">Сортировка:</h2>
           <div class="sorting">
-            <label class="sort sort-active price"><input class="visually-hidden" type="radio" name="sort" checked>По цене</label>
+            <label class="sort sort-active"><input class="visually-hidden" type="radio" name="sort" checked>По цене</label>
             <label class="sort type"><input class="visually-hidden" type="radio" name="sort">По типу</label>
-            <label class="sort popularity"><input class="visually-hidden" type="radio" name="sort">По популярности</label>
+            <label class="sort"><input class="visually-hidden" type="radio" name="sort">По популярности</label>
           </div>
           <div class="sorting-direction">
             <label class="up current-direction"><input class="visually-hidden" type="radio" name="direction" aria-label="Сортировка по возрастанию" checked></label>
@@ -115,19 +117,19 @@
         <div class="selfies">
          <div class="catalog-item">
            <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-         <p><a href="" class="anchor item-card-anchor">Любительская селфи-палка</a><span>500 руб.</span></p>
+         <p><a href="" class="anchor item-card-anchor">Любительская селфи-палка</a><span class="price">500 руб.</span></p>
          </div>
          <div class="catalog-item">
            <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-           <p><a href="" class="anchor item-card-anchor">Профессиональная селфи-палка</a><span>1500 руб.</span></p>
+           <p><a href="" class="anchor item-card-anchor">Профессиональная селфи-палка</a><span class="price">1500 руб.</span></p>
          </div>
          <div class="catalog-item">
            <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-           <p><a href="" class="anchor item-card-anchor">Непотопляемая селфи-палка</a><span>2500 руб.</span></p>
+           <p><a href="" class="anchor item-card-anchor">Непотопляемая селфи-палка</a><span class="price">2500 руб.</span></p>
          </div>
          <div class="catalog-item">
            <img src="img/item-4.jpg" width="360" height="380" alt="селфи-палка «Следуй за мной»">
-           <p><a href="" class="anchor item-card-anchor">селфи-палка «Следуй за мной»</a><span>4900 руб.</span></p>
+           <p><a href="" class="anchor item-card-anchor">селфи-палка «Следуй за мной»</a><span class="price">4900 руб.</span></p>
          </div>
         </div>
         <div class="pagination">
