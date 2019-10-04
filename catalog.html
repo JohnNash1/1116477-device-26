@@ -13,7 +13,7 @@
           <a class="logo-anchor" href="index.html">
             <img src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина Девайс">
           </a>
-          <form class="search" action="#" method="get">
+          <form class="search" action="http://echo.htmlacademy.ru" method="get">
             <label for="searchdevice"></label>
             <input type="search" placeholder="Поиск по сайту" name="searchdevice" id="searchdevice" aria-label="Поиск по сайту" class="search-field">
             <button type="submit" class="search-button">Найти</button>
@@ -72,7 +72,7 @@
     <div class="items-box">
       <section class="filter">
          <h2 class="section-title">Фильтр:</h2>
-         <form class="filters" action="#" method="post">
+         <form class="filters" action="http://echo.htmlacademy.ru" method="post">
           <fieldset class="price-range">
            <legend class="filter-title">Стоимость</legend>
            <div class="range-full" tabindex="0">
@@ -82,38 +82,44 @@
           <fieldset class="color-check">
             <legend class="filter-title">Цвет</legend>
             <input class="visually-hidden color-checkbox" type="checkbox" name="Black" id="black" checked>
-            <label for="black" tabindex="0">Чёрный</label>
+            <label class="color-label" for="black">Чёрный</label>
             <input class="visually-hidden color-checkbox" type="checkbox" name="white" id="white">
-            <label for="white">Белый</label>
+            <label class="color-label" for="white">Белый</label>
             <input class="visually-hidden color-checkbox" type="checkbox" name="Blue" id="Blue" checked>
-            <label for="Blue">Синий</label>
+            <label class="color-label" for="Blue">Синий</label>
             <input class="visually-hidden color-checkbox" type="checkbox" name="Red" id="Red" checked>
-            <label for="Red">Красный</label>
+            <label class="color-label" for="Red">Красный</label>
             <input class="visually-hidden color-checkbox" type="checkbox" name="Pink" id="Pink">
-            <label for="Pink">Розовый</label>
+            <label class="color-label" for="Pink">Розовый</label>
           </fieldset>
           <fieldset class="bt-check">
             <legend class="filter-title">Bluetooth</legend>
               <input class="visually-hidden radio" type="radio" id="bt-yes" name="Bt" value="yes" checked>
-              <label for="bt-yes">Есть</label>
+              <label class="radio-label" for="bt-yes">Есть</label>
               <input class="visually-hidden radio" type="radio" id="bt-no" name="Bt" value="no">
-              <label for="bt-no">Нет</label>
+              <label class="radio-label" for="bt-no">Нет</label>
           </fieldset>
           <p><button type="submit" class="services-button filter-button"><span>Показать</span></button></p>
         </form>
       </section>
 
       <section class="items">
-        <form class="sorting-form" action="#" method="post">
+        <form class="sorting-form" action="http://echo.htmlacademy.ru" method="post">
           <h2 class="sorting-form-title">Сортировка:</h2>
           <div class="sorting">
-            <label class="sort sort-active"><input class="visually-hidden" type="radio" name="sort" checked>По цене</label>
-            <label class="sort type"><input class="visually-hidden" type="radio" name="sort">По типу</label>
-            <label class="sort"><input class="visually-hidden" type="radio" name="sort">По популярности</label>
+            <input class="visually-hidden sort-input" id="price" type="radio" name="sort" checked>
+            <label for="price" class="sort sort-active">По цене</label>
+            <input class="visually-hidden sort-input" id="type" type="radio" name="sort">
+            <label for="type" class="sort type">По типу</label>
+            <input class="visually-hidden sort-input" id="popularity" type="radio" name="sort">
+            <label for="popularity" class="sort">По популярности</label>
           </div>
+
           <div class="sorting-direction">
-            <label class="up current-direction"><input class="visually-hidden" type="radio" name="direction" aria-label="Сортировка по возрастанию" checked></label>
-            <label class="down"><input class="visually-hidden" type="radio" name="direction" aria-label="Сортировка по убыванию"></label>
+            <input class="visually-hidden direction-input" id="up" type="radio" name="direction" aria-label="Сортировка по возрастанию">
+            <label for="up" class="up"></label>
+            <input class="visually-hidden direction-input" id="down" type="radio" name="direction" aria-label="Сортировка по убыванию" checked>
+            <label for="down" class="down"></label>
           </div>
         </form>
 
@@ -150,7 +156,7 @@
     </main>
     <footer class="main-footer">
       <div class="footer-firstline">
-        <a href="index.html">
+        <a class="footer-logo" href="index.html">
          <img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс">
         </a>
         <ul class="lists footer-user-interactive">
@@ -174,7 +180,7 @@
            <li><a href="" aria-label="Магазин Девайс в Инстаграме" class="instagram"></a></li>
            <li><a href="" aria-label="Магазин Девайс в Твиттере" class="twitter"></a></li>
          </ul>
-         <a href="https://htmlacademy.ru/intensive/htmlcss">
+         <a class="html-logo" href="https://htmlacademy.ru/intensive/htmlcss">
            <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML Academy">
          </a>
        </div>
