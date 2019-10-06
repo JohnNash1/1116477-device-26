@@ -75,8 +75,8 @@
          <form class="filters" action="http://echo.htmlacademy.ru" method="post">
           <fieldset class="price-range">
            <legend class="filter-title">Стоимость</legend>
-           <div class="range-full" tabindex="0">
-             <div class="range-slider"></div><div class="range-part"></div><div class="range-slider"></div>
+           <div class="range-full">
+             <div class="range-slider left" tabindex="0"></div><div class="range-part"></div><div class="range-slider right" tabindex="0"></div>
            </div>
           </fieldset>
           <fieldset class="color-check">
@@ -94,10 +94,12 @@
           </fieldset>
           <fieldset class="bt-check">
             <legend class="filter-title">Bluetooth</legend>
+
               <input class="visually-hidden radio" type="radio" id="bt-yes" name="Bt" value="yes" checked>
               <label class="radio-label" for="bt-yes">Есть</label>
               <input class="visually-hidden radio" type="radio" id="bt-no" name="Bt" value="no">
               <label class="radio-label" for="bt-no">Нет</label>
+
           </fieldset>
           <p><button type="submit" class="services-button filter-button"><span>Показать</span></button></p>
         </form>
