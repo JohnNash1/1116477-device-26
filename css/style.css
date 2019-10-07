@@ -471,6 +471,9 @@ body {
   letter-spacing: 3.2px;
   text-transform: uppercase;
 }
+.pagination-anchor:active {
+  color: #000000;
+}
 .page-numbers {
   color: rgba(0, 0, 0, 0.3);
 }
@@ -1121,7 +1124,7 @@ body {
   background-color: #d9d9d9;
   padding-right: 178px;
   padding-top: 23px;
-  height: 48px;  
+  height: 48px;
 }
 .price-range {
   margin-top: 48px;
@@ -1281,11 +1284,12 @@ body {
   padding-left: 73px;
 }
 .catalog-item {
-  margin-bottom: 49px;
+  margin-bottom: 32px;
 }
 .selfie-text {
   display: flex;
   justify-content: space-between;
+  margin-top: 22px;
 }
 .price {
   font-family: "Gilroy-Light", "Arial", sans-serif;
@@ -1309,8 +1313,8 @@ body {
 }
 .catalog-item:nth-child(4)::before {
   position: absolute;
-  top: 15px;
-  right: 70px;
+  top: 28px;
+  right: 27px;
   content: "NEW";
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 14px;
@@ -1325,24 +1329,59 @@ body {
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 50%;
 }
+.pagination {
+  margin-bottom: 77px;
+}
 .pagination-list {
   margin-left: 73px;
+  margin-top: -13px;
   display: flex;
   width: 759px;
   background-color: #ebebeb;
-  padding-top: 30px;
-  padding-bottom: 27px;
+
 }
 .pagination-back {
-  margin-left: 30px;
-  margin-right: auto;
+  display: block;
+  width: 106px;
+  margin-right: 231px;
+
+}
+.page-back {
+  display: block;
+  width: 106px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+}
+.page-next {
+  display: block;
+  width: 104px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  padding-left: 32px;
+}
+.page-back:hover,
+.page-back:focus,
+.page-next:hover,
+.page-next:focus {
+  background-color: #d9d9d9;
+  color: #000000;
+}
+.page-back:active,
+.page-next:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 .pagination-next {
-  margin-right: 29px;
+  display: block;
+  width: 136px;
   margin-left: auto;
 }
 .pagination-central-number {
-  margin: 0 31px;
+  margin-left: 28px;
+  margin-right: 28px;
+}
+.pagination-number {
+  padding-top: 21px;
 }
 .catalog-container {
   display: flex;
