@@ -993,15 +993,17 @@ body {
   margin-top: 65px;
   margin-left: 4px;
 }
+.footer-container {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+}
 .footer-firstline {
-  padding-top: 49px;
-  padding-left: 139px;
-  padding-right: 140px;
+  padding-top: 49px;  
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
-
 .footer-user-interactive {
   display: flex;
 }
@@ -1011,8 +1013,6 @@ body {
 }
 .footer-secondline {
   margin-top: 20px;
-  padding-left: 136px;
-  padding-right: 139px;
   display: flex;
   justify-content: space-between;
 }
@@ -1032,8 +1032,6 @@ body {
   margin-right: 33px;
 }
 .footer-thirdline {
-  padding-left: 139px;
-  padding-right: 140px;
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
