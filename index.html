@@ -232,7 +232,7 @@
           <h2 class="contacts-title">Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно,
             вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <img src="img/map.png" width="560" height="222" alt="Где мы находимся">
+          <img class="map-img" src="img/map.png" width="560" height="222" alt="Где мы находимся">
           <p><button type="button" name="feedback" class="services-button feedback-button">Напишите нам</button></p>
         </section>
       </div>
@@ -292,13 +292,45 @@
           <textarea class="feedback-text-input" name="feedback-text" id="feedback-text" rows="8" cols="80" placeholder="В свободной форме"></textarea><br>
           <button type="submit" class="services-button modal-submit">Отправить</button>
         </div>
+        <button type="button" name="close" aria-label="Закрыть" class="modal-close-button"></button>
       </form>
-      <button type="button" name="close" aria-label="Закрыть" class="modal-close-button"></button>
+
     </section>
-    <div class="modal-close">
+
       <section class="modal-map">
         <h2 class="visually-hidden">Увеличенная карта</h2>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473672!2d37.527429316044476!3d55.6870340045298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1570543353862!5m2!1sru!2sru" width="960" height="559" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          <button type="button" name="close" aria-label="Закрыть" class="map-close-button"></button>
+        </div>
       </section>
-    </div>
+      <script type="text/javascript">
+        let button = document.querySelector(".feedback-button");
+        let popup = document.querySelector(".feedback");
+        let open = function () {
+          // evt.preventDefault();
+          popup.classList.add("feedback-show");
+        };
+
+        let buttonClose = document.querySelector(".modal-close-button");
+        let close = function () {
+          popup.classList.remove("feedback-show");
+        };
+
+        let map = document.querySelector(".map-img");
+        let popupMap = document.querySelector(".modal-map");
+        let mapOpen = function () {
+          popupMap.classList.add("modal-map-show");
+        };
+
+        let buttonMapClose = document.querySelector(".map-close-button");
+        let mapClose = function () {
+          popupMap.classList.remove("modal-map-show");
+        };
+        button.addEventListener("click", open);
+        buttonClose.addEventListener("click", close);
+        map.addEventListener("click", mapOpen);
+        buttonMapClose.addEventListener("click", mapClose);
+      </script>
   </body>
 </html>
