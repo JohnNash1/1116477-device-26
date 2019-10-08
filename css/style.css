@@ -1506,22 +1506,56 @@ body {
 .email-box {
   margin-left: 40px;
 }
-.person {
-  width: 360px;
+.person,
+.person::placeholder,
+.feedback-text-input::placeholder {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #464646;
+  width: 340px;
   height: 50px;
-  background-color: #e5e5e5;
+  padding-left: 20px;
   box-shadow: none;
   border: none;
+}
+
+.person:hover {
+  background-color: #eaeaea;
+}
+.person:focus {
+  outline: solid 3px #f0c52e;
+}
+.person::placeholder,
+.feedback-text-input::placeholder {
+  padding-left: 0;
+  color: rgba(70, 70, 70, 0.4);
 }
 .modal-text-box {
   margin-top: 36px;
 }
 .feedback-text-input {
-  background-color: #e5e5e5;
   border: none;
   resize: none;
-  width: 760px;
+  width: 740px;
   height: 156px;
+  padding-left: 20px;
+  padding-top: 18px;
+}
+.feedback-text-input:hover {
+  background-color: #eaeaea;
+}
+.feedback-text-input:focus {
+  outline: solid 3px #f0c52e;
+}
+.person:invalid,
+.feedback-text-input:invalid {
+  background-color: #f6dada;
+  color: rgba(70, 70, 70, 0.4);
+  outline: none;
 }
 .color-check .filter-title {
   margin-bottom: 13px;
