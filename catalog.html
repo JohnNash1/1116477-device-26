@@ -107,6 +107,7 @@
 
       <section class="items">
         <form class="sorting-form" action="http://echo.htmlacademy.ru" method="post">
+          <!-- <div class="sorting-container"> -->
           <h2 class="sorting-form-title">Сортировка:</h2>
           <div class="sorting">
             <input class="visually-hidden sort-input" id="price" type="radio" name="sort" checked>
@@ -123,24 +124,41 @@
             <input class="visually-hidden direction-input" id="down" type="radio" name="direction" aria-label="Сортировка по убыванию" checked>
             <label for="down" class="down"></label>
           </div>
+          <!-- </div> -->
         </form>
 
         <div class="selfies">
          <div class="catalog-item">
            <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
          <p class="selfie-text"><a href="" class="anchor item-card-anchor">Любительская селфи-палка</a><span class="price">500 руб.</span></p>
+         <div class="catalog-item-hover">
+           <button class="services-button filter-button to-cart" type="button" name="to-cart">В корзину</button>
+           <button class="to-compare" type="button" name="to-compare">Добавить к сравнению</button>
+         </div>
          </div>
          <div class="catalog-item">
            <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
            <p class="selfie-text"><a href="" class="anchor item-card-anchor">Профессиональная селфи-палка</a><span class="price">1 500 руб.</span></p>
+           <div class="catalog-item-hover">
+             <button class="services-button filter-button to-cart" type="button" name="to-cart">В корзину</button>
+             <button class="to-compare" type="button" name="to-compare">Добавить к сравнению</button>
+           </div>
          </div>
          <div class="catalog-item">
            <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
            <p class="selfie-text"><a href="" class="anchor item-card-anchor">Непотопляемая селфи-палка</a><span class="price">2 500 руб.</span></p>
+           <div class="catalog-item-hover">
+             <button class="services-button filter-button to-cart" type="button" name="to-cart">В корзину</button>
+             <button class="to-compare" type="button" name="to-compare">Добавить к сравнению</button>
+           </div>
          </div>
          <div class="catalog-item">
            <img src="img/item-4.jpg" width="360" height="380" alt="селфи-палка «Следуй за мной»">
            <p class="selfie-text"><a href="" class="anchor item-card-anchor">Селфи-палка «Следуй за мной»</a><span class="price">4 900 руб.</span></p>
+           <div class="catalog-item-hover">
+             <button class="services-button filter-button to-cart" type="button" name="to-cart">В корзину</button>
+             <button class="to-compare" type="button" name="to-compare">Добавить к сравнению</button>
+           </div>
          </div>
         </div>
         <div class="pagination">

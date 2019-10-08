@@ -844,6 +844,13 @@ body {
 .slide-li:nth-child(3) p:nth-child(2) {
   padding-left: 3px;
 }
+.services-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 1162px;
+  margin: 0 auto;
+}
 .services {
   position: relative;
   display: flex;
@@ -855,13 +862,14 @@ body {
   margin-top: 107px;
 }
 .service-description {
-  width: 426px;
+  width: 760px;
   margin-left: 117px;
+  margin-right: auto;
 }
 .service-description::after {
   position: absolute;
   top: 58px;
-  right: 208px;
+  right: 70px;
   display: block;
   content: "";
   width: 136px;
@@ -886,6 +894,7 @@ body {
   margin-bottom: 0;
 }
 .service-text {
+  width: 426px;
   margin-top: 32px;
   margin-left: -1px;
 }
@@ -915,7 +924,7 @@ body {
 }
 .services-list-block {
   min-width: 285px;
-  margin-left: 138px;
+  margin-left: auto;
 }
 .information {
   display: flex;
@@ -1113,7 +1122,6 @@ body {
 .filters {
   width: 100%;
   max-width: 200px;
-  /* padding-left: 182px; */
   padding-right: 85px;
   margin-left: auto;
 }
@@ -1208,6 +1216,13 @@ body {
   width: 100%;
   max-width: 972px;
 }
+/* .sorting-container {
+  display: flex;
+  width: 100%;
+  max-width: 972px;
+  margin-right: 20px;
+  outline: 1px solid red;
+} */
 .sorting-form-title {
   margin: 0;
   margin-left: 73px;
@@ -1222,7 +1237,6 @@ body {
 }
 .sorting-direction {
   display: flex;
-  /* margin-right: 140px; */
   margin-left: 232px;
   margin-top: 29px;
 }
@@ -1278,18 +1292,57 @@ body {
   margin-bottom: 11px;
 }
 .selfies {
+  width: 100%;
+  max-width: 899px;
   display: flex;
   flex-wrap: wrap;
   padding-top: 69px;
   padding-left: 73px;
 }
 .catalog-item {
+  position: relative;
   margin-bottom: 32px;
+}
+.catalog-item-hover {
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 360px;
+  height: 215px;
+  background-color: rgba(238, 238, 238, 0.7);
+  padding-top: 164px;
+}
+.catalog-item:hover .catalog-item-hover {
+  display: flex;
+}
+.to-cart {
+  margin-bottom: 25px;
+}
+.to-compare {
+  border: none;
+  background-color: transparent;
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.13px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+.to-compare:hover,
+.to-compare:focus {
+  color: #000000;
+}
+.to-compare:active {
+  color: rgba(0, 0, 0, 0.2);
 }
 .selfie-text {
   display: flex;
   justify-content: space-between;
-  margin-top: 22px;
+  margin-top: 18px;
 }
 .price {
   font-family: "Gilroy-Light", "Arial", sans-serif;
