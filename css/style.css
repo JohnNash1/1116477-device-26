@@ -58,7 +58,9 @@ body {
   text-decoration: none;
   color: #000000;
 }
-
+.tel-anchor {
+  color: #ffffff;
+}
 .anchor:hover,
 .anchor:focus {
   color: rgba(0, 0, 0, 0.6);
@@ -434,6 +436,7 @@ body {
   margin-left: 12px;
   border: none;
   display: inline-block;
+  vertical-align: baseline;
   width: 16px;
   height: 16px;
   background-color: transparent;
@@ -579,6 +582,7 @@ body {
 .logo-anchor:active {
   opacity: 0.3;
 }
+
 .search {
   display: flex;
   position: absolute;
@@ -684,9 +688,6 @@ body {
 .item-categorie:nth-child(2) {
   margin-left: 58px;
   margin-right: 77px;
-}
-.popular {
-  /* outline: 1px solid red; */
 }
 .slides {
   margin: 0 auto;
