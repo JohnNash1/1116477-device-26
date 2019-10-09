@@ -232,7 +232,7 @@
           <h2 class="contacts-title">Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно,
             вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <img class="map-img" src="img/map.png" width="560" height="222" alt="Где мы находимся">
+          <a class="map-img" href=""><img src="img/map.png" width="560" height="222" alt="Где мы находимся"></a>
           <p><button type="button" name="feedback" class="services-button feedback-button">Напишите нам</button></p>
         </section>
       </div>
@@ -279,16 +279,16 @@
       <form class="feedback-form" action="http://echo.htmlacademy.ru" method="post">
         <div class="person-mainbox">
          <div class="person-box">
-           <label for="username" class="modal-text">Ваше имя:</label><br>
+           <label for="username" class="modal-text">Ваше имя:</label>
            <input class="person" type="text" name="username" id="username" placeholder="Имя Фамилия">
          </div>
          <div class="person-box email-box">
-           <label for="user-email" class="modal-text">Ваш e-mail:</label><br>
+           <label for="user-email" class="modal-text">Ваш e-mail:</label>
            <input class="person" type="email" name="user-email" id="user-email" placeholder="email@example.com" required><br>
          </div>
         </div>
         <div class="modal-text-box">
-          <label for="feedback-text" class="modal-text">Текст письма:</label><br>
+          <label for="feedback-text" class="modal-text">Текст письма:</label>
           <textarea class="feedback-text-input" name="feedback-text" id="feedback-text" rows="8" cols="80" placeholder="В свободной форме"></textarea><br>
           <button type="submit" class="services-button modal-submit">Отправить</button>
         </div>
@@ -304,33 +304,6 @@
           <button type="button" name="close" aria-label="Закрыть" class="map-close-button"></button>
         </div>
       </section>
-      <script type="text/javascript">
-        let button = document.querySelector(".feedback-button");
-        let popup = document.querySelector(".feedback");
-        let open = function () {
-          // evt.preventDefault();
-          popup.classList.add("feedback-show");
-        };
-
-        let buttonClose = document.querySelector(".modal-close-button");
-        let close = function () {
-          popup.classList.remove("feedback-show");
-        };
-
-        let map = document.querySelector(".map-img");
-        let popupMap = document.querySelector(".modal-map");
-        let mapOpen = function () {
-          popupMap.classList.add("modal-map-show");
-        };
-
-        let buttonMapClose = document.querySelector(".map-close-button");
-        let mapClose = function () {
-          popupMap.classList.remove("modal-map-show");
-        };
-        button.addEventListener("click", open);
-        buttonClose.addEventListener("click", close);
-        map.addEventListener("click", mapOpen);
-        buttonMapClose.addEventListener("click", mapClose);
-      </script>
+      <script src="js/script.js" type="text/javascript"></script>
   </body>
 </html>

@@ -1,11 +1,9 @@
 @font-face {
   font-family: "Gilroy";
   src:
-    url("../web/gilroyextrabold.woff"),
-    url("../web/Gilroy-ExtraBold.eot"),
-    url("../web/Gilroy-ExtraBold.ttf"),
-    url("../web/gilroyextrabold.woff2");
-  font-weight: normal;
+   url("../web/gilroyextrabold.woff"),
+   url("../web/gilroyextrabold.woff2");
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
@@ -74,16 +72,19 @@ body {
 }
 .main-header {
   position: relative;
-  margin: 20px auto;
+  margin: 0px auto;
+  margin-top: 20px;
+  margin-bottom: 18px;
   width: 1160px;
 }
 .main-header::after {
+  display: block;
   content: "";
   position:absolute;
   top: 19px;
   width: 1160px;
   height: 299px;
-  background-color: rgb(240, 197, 46, 0.5);
+  background-color: rgba(240, 197, 46, 0.5);
   z-index: -1;
 }
 .inner-header::after {
@@ -104,7 +105,7 @@ body {
 .slide a {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 400;
   line-height: 24px;
   letter-spacing: 3.6px;
   text-transform: uppercase;
@@ -119,7 +120,7 @@ body {
 .footer-info-links a {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 400;
   line-height: 24px;
   letter-spacing: 3.6px;
   color: #ffffff;
@@ -149,14 +150,14 @@ body {
 .category-list a {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.18px;
 }
 .service-description h3 {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 47px;
-  font-weight: 800;
+  font-weight: 400;
   line-height: 48px;
   letter-spacing: 0.47px;
   color: #000000;
@@ -166,7 +167,7 @@ body {
 .main-navigation h1 {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 47px;
-  font-weight: 800;
+  font-weight: 400;
   line-height: 48px;
   letter-spacing: 0.47px;
   color: #000000;
@@ -189,7 +190,7 @@ body {
 .sorting-form-title {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
-  font-weight: 800;
+  font-weight: 400;
   line-height: 24px;
   letter-spacing: 3.2px;
   color: #000000;
@@ -199,7 +200,7 @@ body {
 .item-card-anchor {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.18px;
   color: #000000;
@@ -260,7 +261,7 @@ body {
   content: "";
   width: 160px;
   height: 160px;
-  background-color: rgb(240, 197, 46, 0.5);
+  background-color: rgba(240, 197, 46, 0.5);
   background-repeat: no-repeat;
   margin-bottom: 32px;
 }
@@ -327,7 +328,7 @@ body {
   background-color: transparent;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 400;
   line-height: 24px;
   letter-spacing: 3.6px;
   text-align: center;
@@ -398,7 +399,7 @@ body {
   background-color: #f0c52e;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 400;
   line-height: 24px;
   letter-spacing: 3.6px;
   text-align: center;
@@ -466,7 +467,7 @@ body {
 .pagination-anchor {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
-  font-weight: 800;
+  font-weight: 400;
   line-height: 24px;
   letter-spacing: 3.2px;
   text-transform: uppercase;
@@ -684,8 +685,10 @@ body {
   margin-left: 58px;
   margin-right: 77px;
 }
+.popular {
+  /* outline: 1px solid red; */
+}
 .slides {
-
   margin: 0 auto;
 }
 .slide {
@@ -700,7 +703,7 @@ body {
 .slide-title {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 47px;
-  font-weight: 800;
+  font-weight: 400;
   line-height: 56px;
   letter-spacing: 0.47px;
   color: #000000;
@@ -750,7 +753,7 @@ body {
   content: "01";
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 179px;
-  font-weight: 800;
+  font-weight: 400;
   font-style: normal;
   font-stretch: normal;
   line-height: 179px;
@@ -798,25 +801,29 @@ body {
 .dji {
   background-image: url("../img/partner-1-black.jpg");
 }
-.dji:hover {
+.dji:hover,
+.dji:focus {
   background-image: url("../img/partner-1.jpg");
 }
 .sp-gadgets {
   background-image: url("../img/partner-2-black.jpg");
 }
-.sp-gadgets:hover {
+.sp-gadgets:hover,
+.sp-gadgets:focus {
   background-image: url("../img/partner-2.jpg");
 }
 .gopro {
   background-image: url("../img/partner-3-black.jpg");
 }
-.gopro:hover {
+.gopro:hover,
+.gopro:focus {
   background-image: url("../img/partner-3.jpg");
 }
 .vive {
   background-image: url("../img/partner-4-black.jpg");
 }
-.vive:hover {
+.vive:hover,
+.vive:focus {
   background-image: url("../img/partner-4.jpg");
 }
 .features {
@@ -963,7 +970,7 @@ body {
 .transport li {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
-  font-weight: 800;
+  font-weight: 400;
   line-height: 40px;
   letter-spacing: normal;
   color: #000000;
@@ -1369,7 +1376,7 @@ body {
   content: "NEW";
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.7px;
   text-align: center;
@@ -1461,7 +1468,7 @@ body {
 .feedback-form {
   position: relative;
   padding-left: 101px;
-  padding-top: 99px;
+  padding-top: 90px;
 }
 .modal-close-button,
 .map-close-button {
@@ -1504,7 +1511,7 @@ body {
 }
 .modal-submit {
   min-width: 200px;
-  margin-top: 43px;
+  margin-top: 20px;
 }
 .modal-submit::before {
   width: 200px;
@@ -1518,12 +1525,14 @@ body {
   background-color: #f0c52e;
 }
 .modal-text {
+  display: block;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 400;
   line-height: 24px;
   letter-spacing: normal;
   color: #000000;
+  margin-bottom: 5px;
 }
 .person-mainbox {
   display: flex;
@@ -1533,9 +1542,8 @@ body {
 .email-box {
   margin-left: 40px;
 }
-.person,
-.person::placeholder,
-.feedback-text-input::placeholder {
+.person {
+  display: block;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: normal;
@@ -1544,10 +1552,24 @@ body {
   text-align: left;
   color: #464646;
   width: 340px;
-  height: 50px;
+  height: 15px;
   padding-left: 20px;
+  padding-top: 16px;
+  padding-bottom: 19px;
   box-shadow: none;
   border: none;
+}
+
+.person::placeholder,
+.feedback-text-input::placeholder {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  text-align: left;
+  padding-left: 0;
+  color: rgba(70, 70, 70, 0.4);
 }
 
 .person:hover {
@@ -1556,19 +1578,15 @@ body {
 .person:focus {
   outline: solid 3px #f0c52e;
 }
-.person::placeholder,
-.feedback-text-input::placeholder {
-  padding-left: 0;
-  color: rgba(70, 70, 70, 0.4);
-}
 .modal-text-box {
-  margin-top: 36px;
+  margin-top: 0px;
 }
 .feedback-text-input {
+  display: block;
   border: none;
   resize: none;
   width: 740px;
-  height: 156px;
+  height: 138px;
   padding-left: 20px;
   padding-top: 18px;
 }
