@@ -418,7 +418,7 @@ body {
   height: 40px;
   margin-top: 55px;
 }
-.nice-button {
+.nice-button {  
 }
 .detail-button:hover,
 .detail-button:focus,
@@ -679,13 +679,13 @@ body {
   width: 100%;
   z-index: 10;
 }
-.category-list {
+.categorie-list {
   margin: 0;
 }
-.item-category:first-child {
+.item-categorie:first-child {
   margin-left: 60px;
 }
-.item-category:nth-child(2) {
+.item-categorie:nth-child(2) {
   margin-left: 58px;
   margin-right: 77px;
 }
