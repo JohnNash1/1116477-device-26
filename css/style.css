@@ -3,7 +3,7 @@
   src:
    url("../web/gilroyextrabold.woff"),
    url("../web/gilroyextrabold.woff2");
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
 }
 @font-face {
@@ -248,6 +248,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  flex-wrap:wrap;
 }
 .category-list .anchor {
   display: block;
@@ -321,11 +322,9 @@ body {
   background-image: url("../img/popular-6-opacity.svg");
 }
 .services-button {
-  /* display: flex;
-  justify-content: flex-end; */
   border: none;
   min-width: 160px;
-  margin-bottom: 0px;
+  margin-bottom: 36px;
   position: relative;
   background-color: transparent;
   font-family: "Gilroy", "Arial", sans-serif;
@@ -336,15 +335,8 @@ body {
   text-align: center;
   color: #000000;
   text-transform: uppercase;
-  /* padding-right: 119px; */
+  z-index: 1000;
 }
-.services-list li:nth-child(2) {
-  margin-top: 34px;
-}
-.services-list li:nth-child(3) {
-  margin-top: 35px;
-}
-
 .services-button::before {
   position: absolute;
   top: 9px;
@@ -353,7 +345,7 @@ body {
   width: 160px;
   height: 8px;
   background-color: #f0c52e;
-  z-index:-1;
+  z-index: -1;
 }
 .services-button:hover::before,
 .services-button:focus::before {
@@ -378,7 +370,7 @@ body {
   min-width: 200px;
   z-index: 3;
   margin-left: 16px;
-  margin-top: 15px;
+  margin-top: 30px;
 }
 .filter-button::before {
   width: 200px;
@@ -418,7 +410,9 @@ body {
   height: 40px;
   margin-top: 55px;
 }
-.nice-button {
+.writeus {
+  margin-top: 7px;
+  margin-left: 4px;
 }
 .detail-button:hover,
 .detail-button:focus,
@@ -447,6 +441,7 @@ body {
   display: flex;
 }
 .sorting {
+  display: flex;
   margin-top: 18px;
 }
 .sort {
@@ -466,7 +461,11 @@ body {
 .sort:active {
   color: #000000;
 }
-
+.sort-active,
+.sort-active:hover,
+.sort-active:focus {
+  color: #000000;
+}
 .pagination-anchor {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
@@ -518,7 +517,7 @@ body {
   opacity: 0.3;
 }
 .interactive-login {
-  margin-left: 20px;
+  margin-left: 21px;
 }
 .interactive-compare {
   margin-left: auto;
@@ -586,16 +585,21 @@ body {
 .search {
   display: flex;
   position: absolute;
-  top: 70px;
+  top: 53px;
   left: 60px;
+  width: 441px;
+  height: 49px;
 }
 .search-field {
+  position: relative;
   border: none;
   background-color: transparent;
   background-image: url(../img/search.svg);
+  background-position: center left;
   background-repeat: no-repeat;
   padding-left: 36px;
   font-family: "OpenSans", "Arial", sans-serif;
+  width: 441px;
 }
 .search-field::placeholder {
   color: rgba(0, 0, 0, 0.3);
@@ -606,26 +610,32 @@ body {
 .search-field:focus {
   color: inherit;
   border-bottom: 2px solid #000000;
-  width: 356px;
+  margin-top: 2px;
+  width: 441px;
+  height: 47px;
   outline: 0;
 }
-.search-button {
+.search-button-container {
   visibility: hidden;
+}
+.search-button {
+  position: absolute;
+  left: 360px;
+  top: 0px;
   border: none;
-  background-color: transparent;
-}
-.search-field:focus + .search-button {
-  visibility: visible;
+  background-color: rgba(240, 197, 46, 0);;
   border: 2px solid #000000;
-  background-color: transparent;
   padding: 14px 17px;
-  transition: 0.5s
 }
-.search-field:focus + .search-button:hover {
+.search-field:focus + .search-button-container{
+  visibility: visible;
+}
+.search-button-container:hover .search-button {
   color: #ffffff;
   background-color: #000000;
 }
-.search-field:focus + .search-button:active {
+.search-button-container:active .search-button {
+  visibility: visible;
   color: rgba(255, 255, 255, 0.3);
   background-color: #000000;
 }
@@ -667,6 +677,7 @@ body {
 }
 .service-contacts {
   margin-left: auto;
+  margin-right: -3px;
 }
 .catalog-item-categories {
   position: absolute;
@@ -778,7 +789,7 @@ body {
   width: 100%;
   max-width: 1157px;
   margin: 0 auto;
-  margin-top: 222px;
+  margin-top: 93px;
 }
 .partners-list {
   display: flex;
@@ -795,37 +806,24 @@ body {
   width: 260px;
   height: 100px;
 }
+.partners-list img {
+  filter: grayscale(100%);
+  opacity: 0.2;
+}
 .partner {
   background-repeat: no-repeat;
   background-position: center;
 }
-.dji {
-  background-image: url("../img/partner-1-black.jpg");
-}
-.dji:hover,
-.dji:focus {
-  background-image: url("../img/partner-1.jpg");
-}
-.sp-gadgets {
-  background-image: url("../img/partner-2-black.jpg");
-}
-.sp-gadgets:hover,
-.sp-gadgets:focus {
-  background-image: url("../img/partner-2.jpg");
-}
-.gopro {
-  background-image: url("../img/partner-3-black.jpg");
-}
-.gopro:hover,
-.gopro:focus {
-  background-image: url("../img/partner-3.jpg");
-}
-.vive {
-  background-image: url("../img/partner-4-black.jpg");
-}
-.vive:hover,
-.vive:focus {
-  background-image: url("../img/partner-4.jpg");
+.dji:hover img,
+.dji:focus img,
+.sp-gadgets:hover img,
+.sp-gadgets:focus img,
+.gopro:hover img,
+.gopro:focus img,
+.vive:hover img,
+.vive:focus img {
+  filter: grayscale(0);
+  opacity: 1;
 }
 .features {
   display: flex;
@@ -854,6 +852,7 @@ body {
 }
 .services-container {
   position: relative;
+  top: -75px;
   display: flex;
   width: 100%;
   max-width: 1162px;
@@ -866,8 +865,9 @@ body {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  margin-bottom: 169px;
-  margin-top: 107px;
+  margin-top: 182px;
+  background-color: #e5e5e5;
+  min-height: 288px;
 }
 .service-description {
   width: 760px;
@@ -906,17 +906,6 @@ body {
   margin-top: 32px;
   margin-left: -1px;
 }
-
-.services::before {
-  position: absolute;
-  top: 75px;
-  content: "";
-  width: 100%;
-  max-width: 1440px;
-  height: 288px;
-  background-color: #e5e5e5;
-  z-index: -1;
-}
 .services-list {
   position: relative;
   padding-top: 45px;
@@ -940,7 +929,7 @@ body {
   max-width: 1161px;
   margin: 0 auto;
   margin-top: 95px;
-  margin-bottom: 86px;
+  margin-bottom: 82px;
 }
 .about-us {
   width: 485px;
@@ -951,6 +940,16 @@ body {
   margin-bottom: 42px;
 }
 .about-us-text {
+  width: 475px;
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #464646;
   margin-left: -2px;
 }
 .about-us-text:nth-child(3) {
@@ -965,7 +964,7 @@ body {
   background-color: #000000;
 }
 .transport {
-  padding-left: 33px;
+  padding-left: 0px;
   padding-top: 50px;
 }
 .transport li {
@@ -1026,7 +1025,7 @@ body {
 }
 .footer-secondline p {
   padding-left: 0px;
-  margin: 2px;
+  margin: 0px;
 
 }
 .footer-info-links {
@@ -1108,7 +1107,6 @@ body {
   background-repeat: no-repeat;
   background-position: left;
   padding-left: 22px;
-
 }
 .items-box {
   display: flex;
@@ -1118,30 +1116,39 @@ body {
   margin-top: 43px;
 }
 .filter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-wrap: wrap;
   width: 100%;
-  max-width: 467px;
-  background-color: #ebebeb;
+  max-width: 327px;
   padding: 0;
-  margin: 0;
   margin-left: auto;
+  background-color: #ebebeb;
 }
 .filters {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  max-width: 200px;
-  padding-right: 85px;
-  margin-left: auto;
+  max-width: 327px;
+  padding: 0px;
 }
-.section-title {
+.section-title-box {
   display: flex;
   justify-content: flex-end;
-  margin: 0;
+  width: 100%;
+  max-width: 327px;
+  height: 71px;
   background-color: #d9d9d9;
-  padding-right: 178px;
-  padding-top: 23px;
-  height: 48px;
+}
+.section-title {
+  padding: 0;
+  margin-top: 23px;
+  margin-right: 179px;
 }
 .price-range {
-  margin-top: 48px;
+  margin-top: 58px;
+  margin-left: 43px;
 }
 .filter-title {
   padding-top: 20px;
@@ -1209,26 +1216,29 @@ body {
   height: 2px;
   background-color: #91c92f;
 }
-/* .items {
-  outline: 1px solid green;
-} */
+.items {
+  width: 100%;
+  max-width: 833px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  margin-right: auto;
+}
+.sorting-form-box {
+  width: 100%;
+  max-width: 973px;
+  background-color: #ebebeb;
+}
 .sorting-form {
   margin-top: 0;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  background-color: #ebebeb;
   padding: 0;
   width: 100%;
-  max-width: 972px;
+  max-width: 833px;
+  margin-right: auto;
 }
-/* .sorting-container {
-  display: flex;
-  width: 100%;
-  max-width: 972px;
-  margin-right: 20px;
-  outline: 1px solid red;
-} */
 .sorting-form-title {
   margin: 0;
   margin-left: 73px;
@@ -1238,8 +1248,8 @@ body {
   height: 48px;
 }
 .type {
-  margin-left: 25px;
-  margin-right: 26px;
+  margin-left: 28px;
+  margin-right: 31px;
 }
 .sorting-direction {
   display: flex;
@@ -1275,6 +1285,11 @@ body {
   margin-left: 20px;
   opacity: 0.2;
 }
+.direction-active,
+.direction-active:hover,
+.direction-active:focus {
+  opacity: 1;
+}
 .catalog-navigation {
   margin: 0 auto;
   margin-top: 55px;
@@ -1289,21 +1304,27 @@ body {
   flex-direction: column;
   margin-top: 38px;
   margin-bottom: 2px;
+  margin-left: 43px;
 }
 .bt-check {
   display: flex;
   flex-direction: column;
+  margin-left: 43px;
 }
 .bt-check .filter-title {
   margin-bottom: 11px;
 }
+.filter-button-box {
+  margin-left: 43px;
+}
 .selfies {
   width: 100%;
-  max-width: 899px;
+  max-width: 760px;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 69px;
+  padding-top: 68px;
   padding-left: 73px;
+  margin-right: auto;
 }
 .catalog-item {
   position: relative;
@@ -1559,6 +1580,7 @@ body {
   padding-bottom: 19px;
   box-shadow: none;
   border: none;
+  background-color: #f2f2f2;
 }
 
 .person::placeholder,
@@ -1590,6 +1612,7 @@ body {
   height: 138px;
   padding-left: 20px;
   padding-top: 18px;
+  background-color: #f2f2f2;
 }
 .feedback-text-input:hover {
   background-color: #eaeaea;
@@ -1680,29 +1703,20 @@ body {
   background: url(../img/radio-on.svg) no-repeat 0 0;
   opacity: 1;
 }
-/* .radio:checked:not(:disabled):active + .radio-label:before {
-  background: url(../img/radio-off.svg) no-repeat 0 0;
-  opacity: 1;
-} Это выглядит нелепо и ломает доступность, если нажать пробел*/
-.sort-input:focus + .sort{
-  color: rgba(0, 0, 0, 0.6);
-}
-.sort-input:checked + .sort {
-  color: #000000;
-}
-.sort-input:checked:focus +.sort {
-  color: rgba(0, 0, 0, 0.6);
-}
-.direction-input:checked + label {
-  opacity: 1;
-}
-.direction-input:focus + label {
-  opacity: 0.4;
-}
 .footer-logo:hover,
 .footer-logo:focus {
   opacity: 0.6;
 }
 .footer-logo:active {
   opacity: 0.3;
+}
+.transport-list-item:before {
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+  width: 4px;
+  height: 4px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  margin-right: 25px;
 }

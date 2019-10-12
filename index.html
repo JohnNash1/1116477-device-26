@@ -15,10 +15,11 @@
           </a>
           <form class="search" action="http://echo.htmlacademy.ru" method="get">
             <label for="searchdevice"></label>
-            <input type="search" placeholder="Поиск по сайту" name="searchdevice" id="searchdevice" aria-label="Поиск по сайту" class="search-field">
-            <button type="submit" class="search-button">Найти</button>
+            <input class="search-field" type="search" placeholder="Поиск по сайту" name="searchdevice" id="searchdevice" aria-label="Поиск по сайту">
+            <div class="search-button-container">
+              <button type="submit" class="search-button">Найти</button>
+            </div>
           </form>
-
           <div class="catalog-container">
           <a href="catalog.html" class="anchor info-links">Каталог товаров</a><button type="button" name="catalog" aria-label="Открыть каталог" class="catalog-button"></button>
 
@@ -202,10 +203,10 @@
       <section class="partners">
         <h2 class="visually-hidden">Партнёры</h2>
         <ul class="lists partners-list">
-          <li><a href=""  aria-label="dji" class="partner dji"></a></li>
-          <li><a href=""  aria-label="SP-Gadgets" class="partner sp-gadgets"></a></li>
-          <li><a href=""  aria-label="Gopro" class="partner gopro"></a></li>
-          <li><a href=""  aria-label="Vive" class="partner vive"></a></li>
+          <li><a href=""  aria-label="dji" class="partner dji"><img src="img/partner-1.jpg" alt="dji"></a></li>
+          <li><a href=""  aria-label="SP-Gadgets" class="partner sp-gadgets"><img src="img/partner-2.jpg" alt="sp-gadgets"></a></li>
+          <li><a href=""  aria-label="Gopro" class="partner gopro"><img src="img/partner-3.jpg" alt="gopro"></a></li>
+          <li><a href=""  aria-label="Vive" class="partner vive"><img src="img/partner-4.jpg" alt="vive"></a></li>
         </ul>
       </section>
 
@@ -219,9 +220,9 @@
             DEVICE работает со многими транспортными компаниями:
           </p>
           <ul class="lists transport">
-            <li>Деловые Линии</li>
-            <li>Автотрейдинг</li>
-            <li>ЖелДорЭкспедиция</li>
+            <li class="transport-list-item">Деловые Линии</li>
+            <li class="transport-list-item">Автотрейдинг</li>
+            <li class="transport-list-item">ЖелДорЭкспедиция</li>
           </ul>
           <div class="nice-button-container">
             <a href="" class="anchor info-button nice-button">Подробнее о нас</a>
@@ -232,9 +233,9 @@
           <h2 class="contacts-title">Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно,
             вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <a class="map-img" href=""><img src="img/map.png" width="560" height="222" alt="Где мы находимся"></a>
+          <a class="map-img" href=""><img src="img/map.png" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15"></a>
           <div class="nice-button-container">
-          <a class="anchor info-button nice-button" id="writeus" href="writeus.html">Напишите нам</a>
+          <a class="anchor info-button nice-button writeus" href="writeus.html">Напишите нам</a>
           </div>
         </section>
       </div>
@@ -260,7 +261,6 @@
           <li class="footer-warranty"><a href="" class="anchor">Гарантия</a></li>
           <li><a href="" class="anchor">Контакты</a></li>
         </ul>
-        <!-- <p>Тел.: +7 (495) 495-95-95</p> -->
         <p>Тел.: <a class="anchor tel-anchor" href="tel:84954959595">+7 (495) 495-95-95</a></p>
       </div>
 

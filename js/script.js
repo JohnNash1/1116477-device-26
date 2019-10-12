@@ -1,4 +1,4 @@
-const button = document.querySelector("#writeus");
+const button = document.querySelector(".writeus");
 const popup = document.querySelector(".feedback");
 const feedback = popup.querySelector("#username");
 const open = function (evt) {
