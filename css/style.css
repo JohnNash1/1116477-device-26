@@ -3,15 +3,15 @@
   src:
    url("../web/gilroyextrabold.woff"),
    url("../web/gilroyextrabold.woff2");
-  font-weight: normal;
+  font-weight: 800;
   font-style: normal;
 }
 @font-face {
-  font-family: "Gilroy-Light";
+  font-family: "Gilroy";
   src:
     url("../web/gilroylight.woff"),
     url("../web/gilroylight.woff2");
-  font-weight: normal;
+  font-weight: 300;
   font-style: normal;
 }
 @font-face {
@@ -23,21 +23,20 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "Open Sans Light";
+  font-family: "Open Sans";
   src:
     url("../web/opensanslight.woff"),
     url("../web/opensanslight.woff2");
-  font-weight: normal;
+  font-weight: 300;
   font-style: normal;
 }
 body {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 300;
   font-style: normal;
-  font-stretch: normal;
   line-height: 30px;
   letter-spacing: 0.15px;
   text-align: left;
@@ -107,7 +106,7 @@ body {
 .slide a {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   letter-spacing: 3.6px;
   text-transform: uppercase;
@@ -122,7 +121,7 @@ body {
 .footer-info-links a {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   letter-spacing: 3.6px;
   color: #ffffff;
@@ -138,10 +137,14 @@ body {
 }
 
 .slide-li p:first-child {
-  font-family: "Gilroy-Light", "Arial", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 36px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
   line-height: 48px;
   letter-spacing: 0.36px;
+  text-align: left;
   color: #000000;
 }
 .slide-li p:last-child {
@@ -152,14 +155,14 @@ body {
 .category-list a {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   letter-spacing: 0.18px;
 }
 .service-description h3 {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 47px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 48px;
   letter-spacing: 0.47px;
   color: #000000;
@@ -169,7 +172,7 @@ body {
 .main-navigation h1 {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 47px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 48px;
   letter-spacing: 0.47px;
   color: #000000;
@@ -192,7 +195,7 @@ body {
 .sorting-form-title {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   letter-spacing: 3.2px;
   color: #000000;
@@ -202,7 +205,7 @@ body {
 .item-card-anchor {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   letter-spacing: 0.18px;
   color: #000000;
@@ -329,7 +332,7 @@ body {
   background-color: transparent;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   letter-spacing: 3.6px;
   text-align: center;
@@ -393,7 +396,7 @@ body {
   background-color: #f0c52e;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   letter-spacing: 3.6px;
   text-align: center;
@@ -469,7 +472,7 @@ body {
 .pagination-anchor {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   letter-spacing: 3.2px;
   text-transform: uppercase;
@@ -581,7 +584,6 @@ body {
 .logo-anchor:active {
   opacity: 0.3;
 }
-
 .search {
   display: flex;
   position: absolute;
@@ -602,6 +604,14 @@ body {
   width: 441px;
 }
 .search-field::placeholder {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  text-align: left;
   color: rgba(0, 0, 0, 0.3);
 }
 .search-field:hover::placeholder {
@@ -715,16 +725,30 @@ body {
 .slide-title {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 47px;
-  font-weight: 400;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
   line-height: 56px;
   letter-spacing: 0.47px;
+  text-align: left;
   color: #000000;
   padding-top: 34px;
-  margin: 47px 0 0 2px;
+  margin: 47px 0 0 3px;
+  width: 100%;
   max-width: 397px;
 }
 .slide-text {
-  padding: 3px 0 0 2px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  text-align: left;
+  color: #464646;
+  padding: 4px 0 0 0px;
+  margin-left: 3px;
+  width: 100%;
 }
 .slider-pagination {
   display: flex;
@@ -742,7 +766,6 @@ body {
 .popular-description {
   position: relative;
   margin-left: 125px;
-  /* z-index: -1; */
   width: 100%;
   min-width: 490px;
 }
@@ -765,7 +788,7 @@ body {
   content: "01";
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 179px;
-  font-weight: 400;
+  font-weight: 800;
   font-style: normal;
   font-stretch: normal;
   line-height: 179px;
@@ -902,9 +925,18 @@ body {
   margin-bottom: 0;
 }
 .service-text {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: 0.24px;
+  text-align: left;
+  color: #464646;
   width: 426px;
   margin-top: 32px;
-  margin-left: -1px;
+  margin-left: -2px;
 }
 .services-list {
   position: relative;
@@ -940,21 +972,22 @@ body {
   margin-bottom: 42px;
 }
 .about-us-text {
-  width: 475px;
-  font-family: "Open Sans Light", "Arial", sans-serif;
+  width: 465px;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
   line-height: 30px;
-  letter-spacing: normal;
+  letter-spacing: 0.13px;
   text-align: left;
   color: #464646;
-  margin-left: -2px;
+  margin-left: -2px;  
 }
 .about-us-text:nth-child(3) {
   margin-left: -3px;
   margin-top: 30px;
+  letter-spacing: -0.15px;
 }
 .about-us::before {
   display: block;
@@ -970,7 +1003,7 @@ body {
 .transport li {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 40px;
   letter-spacing: normal;
   color: #000000;
@@ -1186,7 +1219,8 @@ body {
   display: flex;
   min-width: 30px;
   content: "от 0";
-  font-family: "Gilroy-Light", "Arial", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 300;
   font-size: 14px;
   line-height: 24px;
   margin-top: 20px;
@@ -1196,7 +1230,8 @@ body {
   display: flex;
   min-width: 60px;
   content: "до 5000";
-  font-family: "Gilroy-Light", "Arial", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 300;
   font-size: 14px;
   line-height: 24px;
   margin-top: 20px;
@@ -1351,7 +1386,7 @@ body {
 .to-compare {
   border: none;
   background-color: transparent;
-  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 13px;
   font-weight: 300;
   line-height: 20px;
@@ -1372,7 +1407,7 @@ body {
   margin-top: 18px;
 }
 .price {
-  font-family: "Gilroy-Light", "Arial", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 300;
   font-style: normal;
@@ -1398,7 +1433,7 @@ body {
   content: "NEW";
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   letter-spacing: 0.7px;
   text-align: center;
@@ -1418,13 +1453,11 @@ body {
   display: flex;
   width: 759px;
   background-color: #ebebeb;
-
 }
 .pagination-back {
   display: block;
   width: 106px;
   margin-right: 231px;
-
 }
 .page-back {
   display: block;
@@ -1550,7 +1583,7 @@ body {
   display: block;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   letter-spacing: normal;
   color: #000000;
@@ -1638,7 +1671,6 @@ body {
   width: 23px;
   height: 23px;
   background: url(../img/checkbox-off.svg) no-repeat 0 0;
-
 }
 .color-checkbox:checked + .color-label::before {
   width: 27px;
@@ -1673,7 +1705,6 @@ body {
   padding-left: 41px;
   position: relative;
 }
-
 .radio-label::before {
   position: absolute;
   top: 8px;
@@ -1719,4 +1750,15 @@ body {
   border: 2px solid #e5e5e5;
   border-radius: 50%;
   margin-right: 25px;
+}
+.transport .transport-list-item {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 2.5;
+  letter-spacing: 0.16px;
+  color: #000000;
+}
+.contacts-text {
+  letter-spacing: 0.13px;
 }
