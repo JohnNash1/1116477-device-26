@@ -42,6 +42,7 @@ body {
   text-align: left;
   color: #464646;
   background-color: #ffffff;
+  min-width: 1160px;
 }
 .visually-hidden {
   position: absolute;
@@ -1140,6 +1141,7 @@ body {
   padding-left: 22px;
 }
 .items-box {
+  position: relative;
   display: flex;
   width: 100%;
   min-width: 1160px;
